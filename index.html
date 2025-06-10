@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mobina Biuk - Game Developer</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #ffe6f7, #ffffff);
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #ffd9eb;
+            padding: 1rem 2rem;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            animation: fadeIn 2s ease;
+        }
+
+            header h1 {
+                font-size: 2.5rem;
+                margin: 0;
+            }
+
+            header p {
+                margin: 0;
+                font-size: 1.2rem;
+            }
+
+        section {
+            padding: 2rem;
+        }
+
+        .about {
+            text-align: center;
+        }
+
+            .about img {
+                width: 150px;
+                height: 150px;
+                border-radius: 50%;
+                box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+                animation: popIn 1.5s ease;
+            }
+
+        .projects {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 1.5rem;
+        }
+
+        .project-card {
+            background: #ffffff;
+            border-radius: 12px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            padding: 1rem;
+            text-align: center;
+            transition: transform 0.3s;
+            animation: slideUp 2s ease;
+        }
+
+            .project-card:hover {
+                transform: scale(1.05);
+            }
+
+        footer {
+            background-color: #ffd9eb;
+            text-align: center;
+            padding: 1rem;
+            margin-top: 2rem;
+        }
+
+            footer a {
+                color: #333;
+                text-decoration: none;
+            }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+
+            to {
+                opacity: 1;
+            }
+        }
+
+        @keyframes popIn {
+            0% {
+                transform: scale(0.5);
+                opacity: 0;
+            }
+
+            100% {
+                transform: scale(1);
+                opacity: 1;
+            }
+        }
+
+        @keyframes slideUp {
+            from {
+                transform: translateY(50px);
+                opacity: 0;
+            }
+
+            to {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Mobina Biuk</h1>
+        <p>22-year-old Game Developer | Bachelor in Computer Engineering</p>
+    </header>
+
+    <section class="about">
+        <h2>About Me</h2>
+        <img src="profile.jpg" alt="Mobina Biuk">
+        <p>
+            Hi, I’m Mobina Biuk. I began working with Unreal Engine in 2024. In August, I joined as an intern
+            and completed my internship in February. I’m passionate about game development and technology.
+        </p>
+    </section>
+
+    <section class="projects">
+        <h2>Projects</h2>
+        <!-- Duplicate the div below for each project -->
+        <div class="project-card">
+            <h3>Project Title</h3>
+            <p>Short description of the project.</p>
+            <a href="#">Learn More</a>
+        </div>
+    </section>
+
+    <footer>
+        <p>
+            © 2025 Mobina Biuk | <a href="#">LinkedIn</a> | <a href="#">GitHub</a>
+        </p>
+    </footer>
+</body>
+</html>
