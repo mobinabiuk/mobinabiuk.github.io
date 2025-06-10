@@ -1,13 +1,13 @@
 :root {
     --color-white: #ffffff;
-    --pink-lightest: #ffcad4; /* lighter pink for backgrounds */
-    --pink-light: #e0527c; /* medium pink for lines and highlights */
-    --pink-dark: #c2185b; /* darker pink for nav links and accents */
-    --color-bg: #f2f2f2; /* light gray background */
-    --color-text: var(--color-white); /* all text white */
+    --pink-lightest: #ffe6f7;
+    --pink-light: #ffb6d9;
+    --pink-dark: #e0527c;
+    --color-text: #ffffff;
+    --background-dark: #2f2f2f;
 }
 
-/* Reset & base styles */
+/* Reset */
 *,
 *::before,
 *::after {
@@ -17,144 +17,113 @@
 }
 
 body {
-    background-color: var(--color-bg);
+    background-color: var(--background-dark);
     font-family: Arial, sans-serif;
-    font-size: 16px;
     color: var(--color-text);
-    line-height: 1.5;
     margin: 0;
-    padding-top: 60px;
-    background-color: red !important; /* for fixed nav if you add it later */
+    scroll-behavior: smooth;
 }
 
-/* Navigation styles */
+/* Full-Page Sections */
+.section {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+}
+
+/* Navigation */
 nav {
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
-    background-color: var(--pink-lightest);
-    box-shadow: 0 2px 6px rgba(196, 33, 82, 0.3);
+    background-color: var(--pink-light);
     z-index: 1000;
+    padding: 1rem 0;
+    box-shadow: 0 4px 8px rgba(255, 182, 217, 0.5);
 }
 
     nav ul {
-        list-style: none;
+        list-style: none; /* Remove default bullets */
         display: flex;
         justify-content: center;
         gap: 2rem;
-        padding: 1rem 0;
-        margin: 0;
+        padding-left: 0; /* Also remove any default left padding */
     }
 
     nav a {
-        color: var(--pink-dark);
+        color: var(--color-white);
         text-decoration: none;
-        font-weight: 600;
+        font-weight: bold;
         padding: 0.5rem 1rem;
-        border-radius: 6px;
-        transition: all 0.3s ease;
-        display: inline-block;
+        transition: transform 0.3s ease, background-color 0.3s ease;
     }
 
-        nav a:hover,
-        nav a:focus {
-            background-color: var(--pink-light);
-            color: var(--color-white);
+        nav a:hover {
+            background: rgba(255, 255, 255, 0.3);
+            backdrop-filter: blur(8px);
+            transform: scale(1.1);
         }
 
-/* Header content layout */
+/* Home Section */
 header {
-    background: none; /* no background */
-    padding: 3rem 2rem 4rem;
-    box-shadow: none;
+    padding: 3rem 2rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
 }
 
 .header-content {
     max-width: 900px;
-    margin: 0 auto;
     display: flex;
+    gap: 4rem; /* space between text and image */
     align-items: center;
-    gap: 3rem;
-    flex-wrap: wrap;
+    width: 100%;
 }
 
-.intro-text {
-    flex: 1 1 400px;
-    color: var(--color-text);
+.intro-text h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
 }
-
-    .intro-text h1 {
-        font-size: 2.5rem;
-        margin-bottom: 0.5rem;
-        font-weight: 700;
-        line-height: 1.2;
-        color: var(--color-text);
-    }
 
 .pink-line {
     width: 60px;
     height: 4px;
     background-color: var(--pink-light);
     margin: 0.75rem 0;
-    border-radius: 2px;
 }
 
 .intro-text p {
     font-size: 1.1rem;
     line-height: 1.6;
-    color: var(--color-text);
-    margin-bottom: 1rem;
 }
 
 .stats {
     display: flex;
-    gap: 3rem;
-    font-weight: 600;
-    color: var(--pink-dark);
-    font-size: 1.1rem;
-    margin-top: 0.5rem;
+    gap: 2rem;
+    font-weight: bold;
+    color: var(--pink-light);
 }
 
-    .stats span {
-        border-left: 2px solid var(--pink-light);
-        padding-left: 1rem;
+.intro-image img {
+    max-width: 80%;
+    height: auto;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(255, 182, 217, 0.5);
+    max-width: 300px; /* limit image width */
+}
+
+/* Animations */
+.fade-in {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 0.8s ease, transform 0.6s ease;
+}
+
+    .fade-in.visible {
+        opacity: 1;
+        transform: translateY(0);
     }
-
-        .stats span:first-child {
-            border-left: none;
-            padding-left: 0;
-        }
-
-/* Image styling */
-.intro-image {
-    flex: 0 1 250px;
-    text-align: center;
-}
-
-    .intro-image img {
-        max-width: 100%;
-        height: auto;
-        border-radius: 12px;
-        box-shadow: 0 6px 12px rgba(224, 82, 124, 0.25);
-        object-fit: cover;
-    }
-
-/* Sections */
-section {
-    padding: 2rem;
-    max-width: 900px;
-    margin: 0 auto 3rem;
-    color: var(--color-text);
-}
-
-.about img {
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
-    box-shadow: 0 4px 6px rgba(224, 82, 124, 0.2);
-    display: block;
-    margin: 1rem auto;
-}
-
-/* You can add other sections styling as needed */
