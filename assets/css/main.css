@@ -4,8 +4,6 @@
     --pink-light: #ffb6d9; /* lighter pink */
     --pink-dark: #e0527c; /* darker pink */
     --color-text: #333333;
-    --transition: all 0.3s ease;
-    --ff-body: Arial, sans-serif;
 }
 
 /* Reset & base styles */
@@ -19,15 +17,15 @@
 
 body {
     background-color: var(--color-white);
-    font-family: var(--ff-body);
+    font-family: Arial, sans-serif;
     font-size: 16px;
     color: var(--color-text);
     line-height: 1.5;
     margin: 0;
-    padding-top: 60px; /* space for fixed nav */
+    padding-top: 60px; /* for fixed nav if you add it later */
 }
 
-/* Navigation menu */
+/* Navigation styles */
 nav {
     position: fixed;
     top: 0;
@@ -44,6 +42,10 @@ nav {
         justify-content: center;
         gap: 2rem;
         padding: 1rem 0;
+        margin: 0;
+    }
+
+    nav li {
     }
 
     nav a {
@@ -52,7 +54,7 @@ nav {
         font-weight: 600;
         padding: 0.5rem 1rem;
         border-radius: 6px;
-        transition: var(--transition);
+        transition: all 0.3s ease;
         display: inline-block;
     }
 
@@ -60,26 +62,82 @@ nav {
         nav a:focus {
             background-color: var(--pink-light);
             color: var(--color-white);
-            cursor: pointer;
         }
 
-/* Header styles */
+/* Header content layout */
 header {
-    background-color: var(--pink-lightest);
-    text-align: center;
-    padding: 1rem 2rem;
-    box-shadow: 0 4px 6px rgba(224, 82, 124, 0.2);
+    background: none; /* no background */
+    padding: 3rem 2rem 4rem; /* more top padding */
+    box-shadow: none; /* remove shadow */
 }
 
-    header h1 {
+.header-content {
+    max-width: 900px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+    flex-wrap: wrap;
+}
+
+.intro-text {
+    flex: 1 1 400px;
+    color: var(--pink-dark);
+}
+
+    .intro-text h1 {
         font-size: 2.5rem;
-        color: var(--pink-dark);
-        margin-bottom: 0.3rem;
+        margin-bottom: 0.5rem;
+        font-weight: 700;
+        line-height: 1.2;
     }
 
-    header p {
-        font-size: 1.1rem;
-        color: var(--pink-dark);
+.pink-line {
+    width: 60px;
+    height: 4px;
+    background-color: var(--pink-light);
+    margin: 0.75rem 0;
+    border-radius: 2px;
+}
+
+.intro-text p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: var(--color-text);
+    margin-bottom: 1rem;
+}
+
+.stats {
+    display: flex;
+    gap: 3rem;
+    font-weight: 600;
+    color: var(--pink-dark);
+    font-size: 1.1rem;
+    margin-top: 0.5rem;
+}
+
+    .stats span {
+        border-left: 2px solid var(--pink-light);
+        padding-left: 1rem;
+    }
+
+        .stats span:first-child {
+            border-left: none;
+            padding-left: 0;
+        }
+
+/* Image styling */
+.intro-image {
+    flex: 0 1 250px;
+    text-align: center;
+}
+
+    .intro-image img {
+        max-width: 100%;
+        height: auto;
+        border-radius: 12px;
+        box-shadow: 0 6px 12px rgba(224, 82, 124, 0.25);
+        object-fit: cover;
     }
 
 /* Sections */
@@ -99,55 +157,4 @@ section {
     margin: 1rem auto;
 }
 
-.projects {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 1.5rem;
-}
-
-.project-card {
-    background: var(--color-white);
-    border-radius: 12px;
-    box-shadow: 0 4px 8px rgba(224, 82, 124, 0.1);
-    padding: 1.5rem;
-    text-align: center;
-    transition: transform 0.3s ease;
-}
-
-    .project-card:hover {
-        transform: scale(1.05);
-    }
-
-    .project-card h3 {
-        color: var(--pink-dark);
-        margin-bottom: 0.5rem;
-    }
-
-    .project-card a {
-        color: var(--pink-dark);
-        font-weight: 600;
-        text-decoration: none;
-        transition: color 0.3s ease;
-    }
-
-        .project-card a:hover {
-            color: var(--pink-light);
-        }
-
-/* Footer */
-footer {
-    background-color: var(--pink-lightest);
-    text-align: center;
-    padding: 1rem 2rem;
-    box-shadow: 0 -2px 6px rgba(224, 82, 124, 0.2);
-    color: var(--pink-dark);
-}
-
-    footer a {
-        color: var(--pink-dark);
-        text-decoration: underline;
-    }
-
-        footer a:hover {
-            color: var(--pink-light);
-        }
+/* Qualification, Projects, Contact, Footer styling you can add as needed */
