@@ -265,19 +265,34 @@ header {
         text-align: center; /* center the header text */
     }
 
+/* Add a vertical line */
+.qualification-content::before {
+    content: '';
+    position: absolute;
+    width: 2px; /* Line width */
+    background-color: var(--pink-light); /* Line color */
+    top: 0;
+    bottom: 0;
+    left: 50%; /* Position the line in the center */
+    transform: translateX(-50%); /* Center the line precisely */
+}
+
 .qualification-content {
     display: flex;
-    justify-content: center;
-    gap: 4rem;
+    justify-content: space-between; /* ensures space between columns */
+    align-items: flex-start; /* align content at the top */
+    gap: 1.5rem;
     width: 100%;
     max-width: 900px;
     margin-top: 2rem;
+    position: relative;
     text-align:left;
 }
 
 .education, .experience {
     flex: 1;
     color: var(--color-text);
+    padding: 0 2rem;
 }
 
     .education h3, .experience h3 {
