@@ -46,9 +46,6 @@ nav {
         padding: 1rem 0;
     }
 
-    nav li {
-    }
-
     nav a {
         color: var(--pink-dark);
         text-decoration: none;
@@ -63,6 +60,7 @@ nav {
         nav a:focus {
             background-color: var(--pink-light);
             color: var(--color-white);
+            cursor: pointer;
         }
 
 /* Header styles */
@@ -89,6 +87,7 @@ section {
     padding: 2rem;
     max-width: 900px;
     margin: 0 auto 3rem;
+    color: var(--color-text);
 }
 
 .about img {
