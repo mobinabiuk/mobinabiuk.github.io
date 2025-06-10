@@ -444,3 +444,34 @@ header {
         font-size: 1.5rem;
         color: var(--color-white);
     }
+
+.contact-list {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    align-items: center;
+}
+
+    .contact-list li {
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+    }
+
+    .contact-list a {
+        text-decoration: none;
+        color: var(--color-white);
+        font-weight: bold;
+        transition: color 0.3s ease;
+    }
+
+        .contact-list a:hover {
+            color: var(--pink-light);
+        }
+
+    .contact-list i {
+        font-size: 1.5rem;
+        color: var(--pink-light);
+    }
