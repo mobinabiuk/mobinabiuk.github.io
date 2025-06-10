@@ -305,13 +305,13 @@ header {
 /* Education and Experience Items Styling */
 .education-item, .experience-item {
     margin-bottom: 1.5rem;
-    line-height: 1.5;
+    line-height: 1.2rem;
 }
 
     .education-item strong, .experience-item strong {
         font-weight: 700;
         display: block;
-        margin-bottom: 0.3rem;
+        margin-bottom: 0rem;
         color: var(--pink-light);
     }
 
