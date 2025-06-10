@@ -316,3 +316,85 @@ header {
     }
 
 
+/* Projects Section */
+.projects {
+    text-align: center; /* Ensures content inside this section is centered */
+    margin: 4rem auto; /* Adds space around the section */
+    display: flex; /* Allows centering in combination with flex properties */
+    flex-direction: column; /* Ensures the header and pink line stack vertically */
+    align-items: center;
+}
+
+    .projects h2 {
+        font-size: 2.5rem;
+        font-weight: bold;
+        color: var(--color-white);
+        margin-bottom: 0.5rem;
+    }
+
+    .projects .pink-line {
+        width: 60px;
+        height: 4px;
+        background-color: var(--pink-light);
+        margin: 2rem auto 5rem auto;
+    }
+
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin: 2rem 0;
+}
+
+.project-card {
+    background-color: var(--background-dark);
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    text-align: left;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+    .project-card:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 6px 12px rgba(255, 182, 217, 0.5);
+    }
+
+    .project-card img {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+    }
+
+    .project-card h3 {
+        font-size: 1.5rem;
+        font-weight: bold;
+        color: var(--color-white);
+        margin: 1rem;
+    }
+
+    .project-card p {
+        font-size: 1rem;
+        color: var(--color-text);
+        margin: 0 1rem 1.5rem 1rem;
+        line-height: 1.6;
+    }
+
+.project-button {
+    display: inline-block;
+    background: rgba(255, 182, 217, 0.3);
+    color: var(--pink-light);
+    font-weight: bold;
+    padding: 0.5rem 1.5rem;
+    border-radius: 8px;
+    text-align: center;
+    text-decoration: none;
+    margin: 1rem;
+    transition: background 0.3s ease, transform 0.3s ease;
+}
+
+    .project-button:hover {
+        background: rgba(255, 182, 217, 0.6);
+        transform: scale(1.05);
+    }
+
