@@ -214,15 +214,15 @@ header {
 
 .about-skills .skill-box {
     background-color: var(--color-white); /* White background for skill boxes */
-    color: #b3b3b3; /* Gray color for text */
+    color: dimgray; /* Gray color for text */
     padding: 1.5rem;
     padding-bottom: 5rem;
-    border-radius: 8px;
+    border-radius: 10px;
     box-shadow: 0 4px 8px rgba(255, 182, 217, 0.5); /* Adds a pink box shadow */
-    font-size: 1rem;
+    font-size: 1.1rem;
     line-height: 1.5;
     flex: 1;
-    /
+    text-align:left;
 }
 
 .skills-grid {
@@ -232,4 +232,72 @@ header {
     flex-wrap: nowrap; /* Prevents wrapping */
     margin-top: 3rem;
 }
+
+
+/* Qualification Section */
+.qualification h2 {
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 0.5rem;
+}
+
+
+
+.qualification .pink-line {
+    width: 60px;
+    height: 4px;
+    background-color: var(--pink-light);
+    margin: 2rem auto 6rem auto;
+}
+
+.qualification.section {
+    display: flex;
+    flex-direction: column; /* stack vertically */
+    align-items: center; /* center horizontally */
+    justify-content: flex-start; /* align at top vertically */
+    padding-top: 20rem;
+    text-align: center; /* center text inside */
+}
+
+    .qualification.section h2 {
+        width: 100%;
+        text-align: center; /* center the header text */
+    }
+
+.qualification-content {
+    display: flex;
+    justify-content: center;
+    gap: 4rem;
+    width: 100%;
+    max-width: 900px;
+    margin-top: 2rem;
+    text-align:left;
+}
+
+.education, .experience {
+    flex: 1;
+    color: var(--color-text);
+}
+
+    .education h3, .experience h3 {
+        font-size: 1.8rem;
+        font-weight: bold;
+        margin-bottom: 4rem;
+        color: var(--color-white);
+    }
+
+/* Education and Experience Items Styling */
+.education-item, .experience-item {
+    margin-bottom: 1.5rem;
+    line-height: 1.5;
+}
+
+    .education-item strong, .experience-item strong {
+        font-weight: 700;
+        display: block;
+        margin-bottom: 0.3rem;
+        color: var(--pink-light);
+    }
+
 
