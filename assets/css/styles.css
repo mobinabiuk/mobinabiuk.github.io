@@ -398,3 +398,49 @@ header {
         transform: scale(1.05);
     }
 
+
+/* Contact Section */
+.contact {
+    text-align: center;
+    margin: 2rem auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+    .contact h2 {
+        font-size: 2.5rem;
+        margin-bottom: 1rem;
+    }
+
+.contact-info {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+    margin-top: 1.5rem;
+}
+
+    .contact-info a {
+        text-decoration: none;
+        color: var(--color-white);
+        font-size: 1.2rem;
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+        padding: 0.75rem 1.5rem;
+        background-color: var(--pink-light);
+        border-radius: 8px;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+        box-shadow: 0 4px 8px rgba(255, 182, 217, 0.5);
+    }
+
+        .contact-info a:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 12px rgba(255, 182, 217, 0.7);
+        }
+
+    .contact-info i {
+        font-size: 1.5rem;
+        color: var(--color-white);
+    }
