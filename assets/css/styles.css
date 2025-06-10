@@ -23,7 +23,8 @@ body {
     color: var(--color-text);
     line-height: 1.5;
     margin: 0;
-    padding-top: 60px; /* for fixed nav if you add it later */
+    padding-top: 60px;
+    background-color: red !important; /* for fixed nav if you add it later */
 }
 
 /* Navigation styles */
