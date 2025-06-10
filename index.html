@@ -4,14 +4,150 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Mobina Biuk - Game Developer</title>
-    <link rel="stylesheet" href="styles.css" />
+    <style>
+        /* Reset */
+        body, h1, h2, h3, p, ul, li, a {
+            margin: 0;
+            padding: 0;
+            text-decoration: none;
+            list-style: none;
+            color: #333;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background-color: #ffffff; /* White background */
+        }
+
+        /* Navigation Styles */
+        nav {
+            background-color: #ffd9eb; /* Light pink */
+            display: flex;
+            justify-content: center;
+            padding: 1rem 0;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+            nav ul {
+                display: flex;
+                gap: 2.5rem;
+            }
+
+                nav ul li {
+                    list-style: none;
+                }
+
+                    nav ul li a {
+                        display: block;
+                        padding: 0.5rem 1.5rem;
+                        border-radius: 8px;
+                        font-weight: 600;
+                        color: #b30059; /* Darker pink */
+                        transition: background-color 0.3s ease, color 0.3s ease;
+                    }
+
+                        /* Hover effect: bg changes to darker pink, text to white */
+                        nav ul li a:hover {
+                            background-color: #b30059; /* Darker pink */
+                            color: #fff;
+                            cursor: pointer;
+                        }
+
+        /* Header */
+        header {
+            background-color: #ffe6f7; /* Very light pink */
+            text-align: center;
+            padding: 2rem 1rem;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+
+            header h1 {
+                font-size: 2.5rem;
+                color: #b30059; /* Dark pink */
+                margin-bottom: 0.5rem;
+            }
+
+            header p {
+                font-size: 1.2rem;
+                color: #b30059;
+            }
+
+        /* About Section */
+        section.about {
+            padding: 3rem 1rem;
+            max-width: 600px;
+            margin: 2rem auto;
+            text-align: center;
+            color: #333;
+        }
+
+            section.about img {
+                width: 150px;
+                height: 150px;
+                border-radius: 50%;
+                box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+                margin-bottom: 1rem;
+            }
+
+        /* Projects Section */
+        section.projects {
+            max-width: 900px;
+            margin: 2rem auto;
+            padding: 1rem;
+        }
+
+            section.projects h2 {
+                text-align: center;
+                color: #b30059;
+                margin-bottom: 1.5rem;
+            }
+
+        .project-card {
+            background: #fff;
+            border-radius: 12px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            padding: 1rem;
+            margin-bottom: 1.5rem;
+            transition: transform 0.3s ease;
+            text-align: center;
+        }
+
+            .project-card:hover {
+                transform: scale(1.05);
+            }
+
+            .project-card h3 {
+                color: #b30059;
+                margin-bottom: 0.5rem;
+            }
+
+        footer {
+            background-color: #ffd9eb;
+            text-align: center;
+            padding: 1rem 0;
+            margin-top: 3rem;
+            color: #b30059;
+        }
+
+            footer a {
+                color: #b30059;
+                margin: 0 0.5rem;
+                font-weight: 600;
+            }
+
+                footer a:hover {
+                    text-decoration: underline;
+                }
+    </style>
 </head>
 <body>
-
     <nav>
         <ul>
             <li><a href="#home">Home</a></li>
-            <li><a href="#about">About Me</a></li>
+            <li><a href="#about-me">About Me</a></li>
             <li><a href="#qualification">Qualification</a></li>
             <li><a href="#projects">Projects</a></li>
             <li><a href="#contact">Contact</a></li>
@@ -23,7 +159,7 @@
         <p>22-year-old Game Developer | Bachelor in Computer Engineering</p>
     </header>
 
-    <section id="about" class="about">
+    <section id="about-me" class="about">
         <h2>About Me</h2>
         <img src="profile.jpg" alt="Mobina Biuk" />
         <p>
@@ -32,9 +168,12 @@
         </p>
     </section>
 
-    <section id="qualification">
-        <h2>Qualification</h2>
-        <p>Details about your qualifications can go here...</p>
+    <section id="qualification" class="qualification">
+        <h2 style="text-align:center; color:#b30059; margin-bottom:1.5rem;">Qualification</h2>
+        <p style="max-width: 600px; margin: 0 auto 2rem auto; text-align:center; color:#333;">
+            <!-- You can add your qualification details here -->
+            Bachelor in Computer Engineering, Internship completed in Unreal Engine game development.
+        </p>
     </section>
 
     <section id="projects" class="projects">
@@ -47,15 +186,13 @@
         <!-- Add more project cards as needed -->
     </section>
 
-    <section id="contact">
-        <h2>Contact</h2>
-        <p>Email: mobina@example.com</p>
-        <p>Phone: +123 456 7890</p>
+    <section id="contact" class="contact" style="max-width: 600px; margin: 2rem auto; text-align: center; color: #333;">
+        <h2 style="color:#b30059; margin-bottom: 1rem;">Contact</h2>
+        <p>You can reach me via email: <a href="mailto:mobina@example.com" style="color:#b30059;">mobina@example.com</a></p>
     </section>
 
     <footer>
         <p>© 2025 Mobina Biuk | <a href="#">LinkedIn</a> | <a href="#">GitHub</a></p>
     </footer>
-
 </body>
 </html>
