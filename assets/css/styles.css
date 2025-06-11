@@ -476,122 +476,118 @@ header {
         color: var(--pink-light);
     }
 
-/* Responsive Styles */
+
+/* General Styles for Smaller Screens */
 @media (max-width: 768px) {
-    /* General Adjustments */
     body {
-        font-size: 14px;
+        padding: 1rem;
     }
 
     nav ul {
-        flex-direction: column; /* Stack navigation items */
+        flex-direction: column;
         gap: 1rem;
-        text-align: center;
     }
 
-    nav a {
-        padding: 0.5rem;
-        font-size: 1rem;
-    }
-
-    /* Header Section */
     header {
-        flex-direction: column; /* Stack text and image */
+        flex-direction: column;
+        align-items: center;
         text-align: center;
-        padding: 2rem 1rem;
     }
 
     .header-content {
-        flex-direction: column; /* Stack text and image */
+        flex-direction: column;
         gap: 2rem;
     }
 
     .intro-image img {
         max-width: 100%;
-        width: auto; /* Scale image properly */
+        width: 80%;
     }
 
-    .stats {
-        flex-direction: column; /* Stack stats */
-        gap: 1rem;
-    }
-
-    /* About Me Section */
     .about-content {
-        flex-direction: column; /* Stack content vertically */
+        flex-direction: column;
+        align-items: center;
         text-align: center;
     }
 
-    .about-text, .about-skills {
-        width: 100%; /* Full width for both sections */
+    .about-text {
+        margin: 0;
     }
 
     .skills-grid {
-        grid-template-columns: 1fr; /* Single-column layout */
-    }
-
-    /* Qualification Section */
-    .qualification-content {
-        flex-direction: column; /* Stack education and experience */
-        text-align: center;
-    }
-
-    .education, .experience {
-        width: 100%; /* Full width for each */
-    }
-
-    /* Projects Section */
-    .project-grid {
-        grid-template-columns: 1fr; /* Single-column layout */
-    }
-
-    .project-card {
-        margin: 0 auto; /* Center cards */
-    }
-
-    /* Contact Section */
-    .contact-info {
-        flex-direction: column; /* Stack contact items */
+        grid-template-columns: 1fr;
         gap: 1rem;
+    }
+
+    .qualification-content {
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .project-grid {
+        grid-template-columns: 1fr;
     }
 
     .contact-list {
-        flex-direction: column; /* Stack social links */
+        flex-direction: column;
+        gap: 1rem;
     }
 }
 
+/* Further adjustments for very small screens */
 @media (max-width: 480px) {
-    /* Smaller Screen Adjustments */
-    nav {
-        padding: 0.5rem 0;
-    }
-
     .intro-text h1 {
-        font-size: 1.8rem; /* Smaller title font size */
+        font-size: 1.8rem;
     }
 
     .intro-text p {
-        font-size: 1rem; /* Smaller paragraph font */
+        font-size: 1rem;
     }
 
-    .stats {
-        font-size: 0.9rem; /* Adjust stats font size */
+    .project-card h3 {
+        font-size: 1.2rem;
     }
 
-    .about-content {
-        gap: 1rem; /* Reduce gap */
+    .project-card p {
+        font-size: 0.9rem;
     }
 
-    .skills-grid {
-        gap: 1rem; /* Smaller gap */
+    .contact h2 {
+        font-size: 2rem;
     }
 
-    .project-card img {
-        height: auto; /* Scale image properly */
-    }
-
-    .contact-info a {
-        font-size: 1rem; /* Adjust font size */
+    .contact-list a {
+        font-size: 1rem;
         padding: 0.5rem 1rem;
+    }
+}
+
+
+#menu {
+    display: flex;
+    flex-direction: column;
+    display: none; /* Hidden by default */
+}
+
+    #menu.show {
+        display: flex; /* Show when toggled */
+    }
+
+#menu-toggle {
+    display: none; /* Hide on larger screens */
+    font-size: 2rem;
+    background: none;
+    border: none;
+    color: var(--color-white);
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    #menu-toggle {
+        display: block;
+    }
+
+    nav ul {
+        display: none;
     }
 }
