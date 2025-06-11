@@ -21,7 +21,26 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 
     // Toggle navigation menu
-    document.getElementById('menu-toggle').addEventListener('click', function () {
-        document.getElementById('menu').classList.toggle('show');
+    const menuToggle = document.getElementById('menu-toggle');
+    const menu = document.getElementById('menu');
+    const menuLinks = menu.querySelectorAll('a');
+
+    menuToggle.addEventListener('click', () => {
+        menu.classList.toggle('show');
     });
+
+    // Hide menu and highlight clicked link
+    menuLinks.forEach(link => {
+        link.addEventListener('click', (e) => {
+            // Hide the menu
+            menu.classList.remove('show');
+
+            // Remove active class from all links
+            menuLinks.forEach(l => l.classList.remove('active'));
+
+            // Add active class to clicked link
+            e.target.classList.add('active');
+        });
+    });
+
 });
