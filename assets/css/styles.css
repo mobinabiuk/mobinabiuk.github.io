@@ -475,3 +475,123 @@ header {
         font-size: 1.5rem;
         color: var(--pink-light);
     }
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    /* General Adjustments */
+    body {
+        font-size: 14px;
+    }
+
+    nav ul {
+        flex-direction: column; /* Stack navigation items */
+        gap: 1rem;
+        text-align: center;
+    }
+
+    nav a {
+        padding: 0.5rem;
+        font-size: 1rem;
+    }
+
+    /* Header Section */
+    header {
+        flex-direction: column; /* Stack text and image */
+        text-align: center;
+        padding: 2rem 1rem;
+    }
+
+    .header-content {
+        flex-direction: column; /* Stack text and image */
+        gap: 2rem;
+    }
+
+    .intro-image img {
+        max-width: 100%;
+        width: auto; /* Scale image properly */
+    }
+
+    .stats {
+        flex-direction: column; /* Stack stats */
+        gap: 1rem;
+    }
+
+    /* About Me Section */
+    .about-content {
+        flex-direction: column; /* Stack content vertically */
+        text-align: center;
+    }
+
+    .about-text, .about-skills {
+        width: 100%; /* Full width for both sections */
+    }
+
+    .skills-grid {
+        grid-template-columns: 1fr; /* Single-column layout */
+    }
+
+    /* Qualification Section */
+    .qualification-content {
+        flex-direction: column; /* Stack education and experience */
+        text-align: center;
+    }
+
+    .education, .experience {
+        width: 100%; /* Full width for each */
+    }
+
+    /* Projects Section */
+    .project-grid {
+        grid-template-columns: 1fr; /* Single-column layout */
+    }
+
+    .project-card {
+        margin: 0 auto; /* Center cards */
+    }
+
+    /* Contact Section */
+    .contact-info {
+        flex-direction: column; /* Stack contact items */
+        gap: 1rem;
+    }
+
+    .contact-list {
+        flex-direction: column; /* Stack social links */
+    }
+}
+
+@media (max-width: 480px) {
+    /* Smaller Screen Adjustments */
+    nav {
+        padding: 0.5rem 0;
+    }
+
+    .intro-text h1 {
+        font-size: 1.8rem; /* Smaller title font size */
+    }
+
+    .intro-text p {
+        font-size: 1rem; /* Smaller paragraph font */
+    }
+
+    .stats {
+        font-size: 0.9rem; /* Adjust stats font size */
+    }
+
+    .about-content {
+        gap: 1rem; /* Reduce gap */
+    }
+
+    .skills-grid {
+        gap: 1rem; /* Smaller gap */
+    }
+
+    .project-card img {
+        height: auto; /* Scale image properly */
+    }
+
+    .contact-info a {
+        font-size: 1rem; /* Adjust font size */
+        padding: 0.5rem 1rem;
+    }
+}
