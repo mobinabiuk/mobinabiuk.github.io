@@ -1,10 +1,10 @@
 :root {
     --color-white: #ffffff;
     --pink-lightest: #ffe6f7;
-    --pink-light: #ffb6d9;
-    --pink-dark: #e0527c;
+    --pink-light: #ffb6b6;
+    --pink-dark: #ffb6b6;
     --color-text: #ffffff;
-    --background-dark: #2f2f2f;
+    --background-dark: #7c8c97;
 }
 
 /* Reset */
@@ -42,7 +42,7 @@ nav {
     background-color: var(--pink-light);
     z-index: 1000;
     padding: 1rem 0;
-    box-shadow: 0 4px 8px rgba(255, 182, 217, 0.5);
+    box-shadow: 0 0px 0px rgba(255, 182, 217, 0.5);
 }
 
     nav ul {
@@ -62,7 +62,7 @@ nav {
     }
 
         nav a:hover {
-            background: rgba(255, 255, 255, 0.3);
+            background: rgba(141, 0, 0, 0.3);
             backdrop-filter: blur(8px);
             transform: scale(1.1);
         }
@@ -86,6 +86,7 @@ header {
 
 .intro-text h1 {
     font-size: 2.5rem;
+    color:#b2deff;
     font-weight: bold;
 }
 
@@ -93,7 +94,7 @@ header {
     width: 60px;
     height: 4px;
     background-color: var(--pink-light);
-    margin: 0.75rem 0;
+    margin: 1.75rem 0;
 }
 
 .intro-text p {
@@ -110,12 +111,23 @@ header {
 
 .intro-image img {
     max-width: 80%;
+    position:relative;
+    top:35%;
     height: auto;
-    border-radius: 12px;
-    box-shadow: 0 4px 8px rgba(255, 182, 217, 0.5);
+    margin-left:3rem;
+    margin-bottom:18rem;
+    border-radius: 18px;
+    box-shadow: 0 2px 2px rgba(111, 220, 235, 0.5);
     max-width: 300px; /* limit image width */
+    
 }
-
+.vl {
+    border-left: 2px solid rgb(122, 189, 206);
+    height: 200px;
+    width:5px;
+    margin-right:5rem;
+    
+  }
 /* Animations */
 .fade-in {
     opacity: 0;
@@ -135,20 +147,22 @@ header {
     align-items: center;
     text-align: center;
     gap: 1rem;
-    padding: 2rem;
+    padding: 1rem;
 }
 
     #about-me h2 {
         font-size: 2.5rem;
         font-weight: bold;
+        margin-top:1rem;
         color: var(--color-white);
+    
     }
 
     #about-me .pink-line {
         width: 60px;
         height: 4px;
         background-color: var(--pink-light);
-        margin-bottom: 10rem;
+   
     }
 
 .about-content {
@@ -166,16 +180,24 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
+    width:50%;
+
 }
 
 
 
 .text-circle p {
+    position: absolute;
+    left: 50%;
     font-size: 1.2rem;
     line-height: 1.75;
     color: var(--color-white);
-    text-align: left;
+    text-align: center;
     margin-right:2rem;
+    width:50%;
+    margin-top:4rem;
+    margin-bottom:5rem;
+    /*padding:5rem;*/
 }
 
 .about-skills {
@@ -184,53 +206,64 @@ header {
 }
 
     .about-skills h3 {
-        font-size: 1.5rem;
+        
+        font-size: 1.7rem;
         font-weight: bold;
-        color: var(--pink-dark);
+        margin-top:3rem;
+        color: rgb(255, 255, 255);
         margin-bottom: 1rem;
     }
 
 .skills-grid {
     display: grid;
+    text-align: center;
     grid-template-columns: 1fr 1fr;
     gap: 1.5rem;
+
 }
 
 .skill-box {
     background-color: var(--color-white);
-    padding: 2.5rem;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(255, 182, 217, 0.5);
+    padding: 1.5rem;
+    border-radius: 50px;
+    box-shadow: 0 0px 0px rgba(255, 182, 217, 0.5);
     font-size: 1rem;
     color: var(--background-dark);
+    
 }
 
 .about-skills .skill-box h4 {
     font-size: 1.2rem;
     font-weight: bold;
+    margin-right: 5rem;
     margin-bottom: 1rem; /* Adds spacing between the header and the text */
     color: var(--background-dark); /* Dark pink for headers */
+    
 }
+
 
 .about-skills .skill-box {
     background-color: var(--color-white); /* White background for skill boxes */
     color: dimgray; /* Gray color for text */
     padding: 1.5rem;
+    padding-left:1.1rem;
     padding-bottom: 5rem;
-    border-radius: 10px;
+    border-radius: 5px;
     box-shadow: 0 4px 8px rgba(255, 182, 217, 0.5); /* Adds a pink box shadow */
     font-size: 1.1rem;
     line-height: 1.5;
     flex: 1;
     text-align:left;
+    
 }
 
 .skills-grid {
     display: flex;
     justify-content: space-between; /* Ensures equal spacing between the skill boxes */
-    gap: 2rem; /* Space between skill boxes */
+    gap: 5rem; /* Space between skill boxes */
     flex-wrap: nowrap; /* Prevents wrapping */
     margin-top: 3rem;
+ 
 }
 
 
@@ -238,7 +271,7 @@ header {
 .qualification h2 {
     font-size: 2rem;
     font-weight: bold;
-    text-align: center;
+    text-align: k;
     margin-bottom: 0.5rem;
 }
 
@@ -248,7 +281,7 @@ header {
     width: 60px;
     height: 4px;
     background-color: var(--pink-light);
-    margin: 2rem auto 6rem auto;
+    margin: 2rem auto 1rem auto;
 }
 
 .qualification.section {
@@ -273,7 +306,7 @@ header {
     background-color: var(--pink-light); /* Line color */
     top: 0;
     bottom: 0;
-    left: 50%; /* Position the line in the center */
+    left: 0%; /* Position the line in the center */
     transform: translateX(-50%); /* Center the line precisely */
 }
 
@@ -347,9 +380,10 @@ header {
 }
 
 .project-card {
-    background-color: var(--background-dark);
-    border-radius: 12px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+ 
+    background: rgba(212, 159, 159, 0.1);
+    border-radius: 5px;
+    box-shadow: 0 30px 0px rgba(0, 0, 0, 0.1);
     overflow: hidden;
     text-align: left;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -357,7 +391,7 @@ header {
 
     .project-card:hover {
         transform: translateY(-10px);
-        box-shadow: 0 6px 12px rgba(255, 182, 217, 0.5);
+        box-shadow: 0 2px 2px rgba(255, 182, 217, 0.2);
     }
 
     .project-card img {
@@ -367,26 +401,28 @@ header {
     }
 
     .project-card h3 {
-        font-size: 1.5rem;
+        font-size: 1.6rem;
         font-weight: bold;
-        color: var(--color-white);
+        color: #b2deff;
         margin: 1rem;
     }
 
     .project-card p {
-        font-size: 1rem;
-        color: var(--color-text);
+        
+        font-size: 1.1rem;
+        color: #b2deff;
+
         margin: 0 1rem 1.5rem 1rem;
         line-height: 1.6;
     }
 
 .project-button {
     display: inline-block;
-    background: rgba(255, 182, 217, 0.3);
-    color: var(--pink-light);
+    background: #ffb6b6;
+    color: white;
     font-weight: bold;
     padding: 0.5rem 1.5rem;
-    border-radius: 8px;
+    border-radius: 4px;
     text-align: center;
     text-decoration: none;
     margin: 1rem;
@@ -480,7 +516,7 @@ header {
 /* General Styles for Smaller Screens */
 @media (max-width: 768px) {
     body {
-        padding: 1rem;
+        padding-top: 15rem;
     }
 
     nav ul {
@@ -495,13 +531,16 @@ header {
     }
 
     .header-content {
-        flex-direction: column;
-        gap: 2rem;
+        flex-direction: row;
+        gap: 3rem;
     }
 
     .intro-image img {
         max-width: 100%;
-        width: 80%;
+        position:relative;
+        top:1px;
+        width: 100%;
+      
     }
 
     .about-content {
@@ -548,10 +587,57 @@ header {
 
 /* Further adjustments for very small screens */
 @media (max-width: 480px) {
-    .intro-text h1 {
-        margin-top:3rem;
+    body {
+        padding-top: 1rem;
+    }
+
+    .header-content {
+        flex-direction: column;
+        gap: 0;
+        order:4;
+        padding:0;
+    }
+    #menu{
+        padding-bottom:0;
+    }
+    #menu li{
+        border-bottom: 1px solid rgba(255, 255, 255, 0.39);
+        width:100%;
+        padding-bottom:8px;
+        text-align:left;
+        position: relative;
+        left:0px;
+    }
+    
+    .intro-image {
+        order:-1;
+        max-width: 100%;
+        position:relative;
+        top:100px;
+        right:50px;
+        margin-top:700px;
+        width: 100%;
+        padding:0;
+      
+    }
+
+    
+    .intro-text{
+        order:2;
+        position:relative;
+        top:-150px;
+        margin-top:0.1rem;
         font-size: 1.8rem;
         text-align:left;
+    
+    }
+
+    .intro-text h1 {
+       
+        margin-top:1rem;
+        font-size: 1.8rem;
+        text-align:left;
+    
     }
 
     .intro-text p {
@@ -568,6 +654,7 @@ header {
     }
 
     .contact h2 {
+        
         font-size: 2rem;
     }
 
@@ -580,10 +667,15 @@ header {
         margin-bottom: 15rem; /* Increase bottom margin */
     }
 
+    .contact {
+        margin-top:30rem;
+    }
     #projects h2{
-        margin-top:10rem;
+        margin-top:95rem;
+
     }
 
+ 
 
     
 }
