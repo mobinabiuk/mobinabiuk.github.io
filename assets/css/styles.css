@@ -17,9 +17,9 @@
 }
 
 body {
-    background-color: var(--background-dark);
+    background-color: #e5e5e5;
     font-family: Arial, sans-serif;
-    color: var(--color-text);
+    color: #000000;
     margin: 0;
     scroll-behavior: smooth;
 }
@@ -39,7 +39,7 @@ nav {
     top: 0;
     left: 0;
     width: 100%;
-    background-color: var(--pink-light);
+    background-color: #fca311;
     z-index: 1000;
     padding: 1rem 0;
     box-shadow: 0 0px 0px rgba(255, 182, 217, 0.5);
@@ -86,14 +86,14 @@ header {
 
 .intro-text h1 {
     font-size: 2.5rem;
-    color:#b2deff;
+    color: #14213d;
     font-weight: bold;
 }
 
 .pink-line {
     width: 60px;
     height: 4px;
-    background-color: var(--pink-light);
+    background-color: #fca311;
     margin: 1.75rem 0;
 }
 
@@ -106,7 +106,7 @@ header {
     display: flex;
     gap: 2rem;
     font-weight: bold;
-    color: var(--pink-light);
+    color: #fca311;
 }
 
 .intro-image img {
@@ -153,16 +153,15 @@ header {
     #about-me h2 {
         font-size: 2.5rem;
         font-weight: bold;
-        margin-top:1rem;
-        color: var(--color-white);
-    
+        margin-top: 1rem;
+        color: #14213d;
     }
 
     #about-me .pink-line {
         width: 60px;
         height: 4px;
-        background-color: var(--pink-light);
-   
+        background-color: #fca311;
+        background-color: #fca311;
     }
 
 .about-content {
@@ -191,12 +190,12 @@ header {
     left: 50%;
     font-size: 1.2rem;
     line-height: 1.75;
-    color: var(--color-white);
+    color: #fca311;
     text-align: center;
-    margin-right:2rem;
-    width:50%;
-    margin-top:4rem;
-    margin-bottom:5rem;
+    margin-right: 2rem;
+    width: 50%;
+    margin-top: 4rem;
+    margin-bottom: 5rem;
     /*padding:5rem;*/
 }
 
@@ -206,11 +205,10 @@ header {
 }
 
     .about-skills h3 {
-        
         font-size: 1.7rem;
         font-weight: bold;
-        margin-top:3rem;
-        color: rgb(255, 255, 255);
+        margin-top: 3rem;
+        color: #fca311;
         margin-bottom: 1rem;
     }
 
@@ -237,24 +235,22 @@ header {
     font-weight: bold;
     margin-right: 5rem;
     margin-bottom: 1rem; /* Adds spacing between the header and the text */
-    color: var(--background-dark); /* Dark pink for headers */
-    
+    color: #14213d; /* Dark pink for headers */
 }
 
 
 .about-skills .skill-box {
     background-color: var(--color-white); /* White background for skill boxes */
-    color: dimgray; /* Gray color for text */
+    color: #14213d; /* Gray color for text */
     padding: 1.5rem;
-    padding-left:1.1rem;
+    padding-left: 1.1rem;
     padding-bottom: 5rem;
     border-radius: 5px;
     box-shadow: 0 4px 8px rgba(255, 182, 217, 0.5); /* Adds a pink box shadow */
     font-size: 1.1rem;
     line-height: 1.5;
     flex: 1;
-    text-align:left;
-    
+    text-align: left;
 }
 
 .skills-grid {
@@ -280,7 +276,7 @@ header {
 .qualification .pink-line {
     width: 60px;
     height: 4px;
-    background-color: var(--pink-light);
+    background-color: #fca311;
     margin: 2rem auto 1rem auto;
 }
 
@@ -303,7 +299,7 @@ header {
     content: '';
     position: absolute;
     width: 2px; /* Line width */
-    background-color: var(--pink-light); /* Line color */
+    background-color: #fca311; /* Line color */
     top: 0;
     bottom: 0;
     left: 0%; /* Position the line in the center */
@@ -324,7 +320,7 @@ header {
 
 .education, .experience {
     flex: 1;
-    color: var(--color-text);
+    color: #000000;
     padding: 0 2rem;
 }
 
@@ -332,7 +328,7 @@ header {
         font-size: 1.8rem;
         font-weight: bold;
         margin-bottom: 4rem;
-        color: var(--color-white);
+        color: #14213d;
     }
 
 /* Education and Experience Items Styling */
@@ -345,7 +341,7 @@ header {
         font-weight: 700;
         display: block;
         margin-bottom: 0rem;
-        color: var(--pink-light);
+        color: #fca311;
     }
 
 
@@ -361,14 +357,14 @@ header {
     .projects h2 {
         font-size: 2.5rem;
         font-weight: bold;
-        color: var(--color-white);
+        color: #14213d;
         margin-bottom: 0.5rem;
     }
 
     .projects .pink-line {
         width: 60px;
         height: 4px;
-        background-color: var(--pink-light);
+        background-color: #fca311;
         margin: 2rem auto 5rem auto;
     }
 
@@ -381,7 +377,7 @@ header {
 
 .project-card {
  
-    background: rgba(212, 159, 159, 0.1);
+    background: #ffffff;
     border-radius: 5px;
     box-shadow: 0 30px 0px rgba(0, 0, 0, 0.1);
     overflow: hidden;
@@ -403,14 +399,14 @@ header {
     .project-card h3 {
         font-size: 1.6rem;
         font-weight: bold;
-        color: #b2deff;
+        color: #14213d;
         margin: 1rem;
     }
 
     .project-card p {
         
         font-size: 1.1rem;
-        color: #b2deff;
+        color: #14213d;
 
         margin: 0 1rem 1.5rem 1rem;
         line-height: 1.6;
@@ -418,7 +414,7 @@ header {
 
 .project-button {
     display: inline-block;
-    background: #ffb6b6;
+    background: #fca311;
     color: white;
     font-weight: bold;
     padding: 0.5rem 1.5rem;
@@ -459,13 +455,13 @@ header {
 
     .contact-info a {
         text-decoration: none;
-        color: var(--color-white);
+        color: #14213d;
         font-size: 1.2rem;
         display: flex;
         align-items: center;
         gap: 0.5rem;
         padding: 0.75rem 1.5rem;
-        background-color: var(--pink-light);
+        background-color: #fca311;
         border-radius: 8px;
         transition: transform 0.3s ease, box-shadow 0.3s ease;
         box-shadow: 0 4px 8px rgba(255, 182, 217, 0.5);
@@ -478,7 +474,7 @@ header {
 
     .contact-info i {
         font-size: 1.5rem;
-        color: var(--color-white);
+        color: #14213d;
     }
 
 .contact-list {
@@ -498,18 +494,18 @@ header {
 
     .contact-list a {
         text-decoration: none;
-        color: var(--color-white);
+        color: #14213d;
         font-weight: bold;
         transition: color 0.3s ease;
     }
 
         .contact-list a:hover {
-            color: var(--pink-light);
+            color: rgba(255, 182, 217, 0.6);
         }
 
     .contact-list i {
         font-size: 1.5rem;
-        color: var(--pink-light);
+        color: #fca311;
     }
 
 
